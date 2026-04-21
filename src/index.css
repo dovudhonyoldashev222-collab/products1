@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #5d87ff;
+  --color-secondary: #49beff;
+  --color-success: #13deb9;
+  --color-danger: #fa896b;
+  --color-warning: #ffae1f;
+  --color-info: #539bff;
+  --color-dark: #2a3547;
+  --color-light: #eaeef4;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #2a3547;
+  background-color: #f4f6f9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+  color: #2a3547;
+}
+
+#root {
+  width: 100%;
+}
+
+.table-row-selected {
+  background-color: rgba(93, 135, 255, 0.05);
+}
+
+.status-badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-in-stock {
+  background-color: #e6fffa;
+  color: #00bfa5;
+}
+
+.status-out-of-stock {
+  background-color: #fef2f2;
+  color: #ef4444;
+}
+
+.sharp-img {
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  font-display: swap;
+}
